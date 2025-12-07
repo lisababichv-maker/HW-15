@@ -1,0 +1,47 @@
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  border: 5px solid black;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 250%;
+  font-weight: bold;
+  justify-content: center;
+  height: 110px;
+}
+
+.item:nth-child(1) {
+  order: 1;
+  background: red;
+  flex-basis: 60%;
+}
+
+.item:nth-child(5) {
+  background: orange;
+  flex-basis: 40%;
+  order: 2;
+}
+
+.item:nth-child(3) {
+  order: 3;
+  background: purple;
+  flex-basis: 33.33%;
+}
+
+.item:nth-child(2) {
+  order: 4;
+  background: blue;
+  flex-basis: 33.33%;
+}
+
+.item:nth-child(4) {
+  order: 55;
+  background: green;
+  flex-basis: 33.33%;
+}
